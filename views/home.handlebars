@@ -1,0 +1,18 @@
+<h1>Ad your burger!</h1>
+<input id="burger-input"></input>
+
+<button id="save-btn">Save</button>
+<script>
+    // jquery on click function!!
+    $('#save-btn').on('click', function () {
+        //grabing value from <input id="burger-input"></input> above that person is typing into use .val()
+        console.log('u got clicked', $("#burger-input").val())
+        $.ajax({
+            url: '/saveBurger',
+            type: 'POST',
+            data: { burger_name: $("#burger-input").val() }
+        })
+    })
+
+
+</script>
