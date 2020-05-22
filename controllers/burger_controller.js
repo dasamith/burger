@@ -6,7 +6,7 @@ module.exports = function (app) {
         res.render('home');
     });
 
-    var burgerModel = require('./models/burger')
+    var burgerModel = require('../models/burger');
 
     //this is our save burger route!!
     app.post('/saveBurger', function (req, res) {
