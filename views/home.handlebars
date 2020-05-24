@@ -1,8 +1,27 @@
 <h1>Ad your burger!</h1>
 <input id="burger-input"></input>
 
+
+
 <button id="save-btn">Save</button>
+
+{{#each burgers}}
+<h1> {{this.burgers_name}}</h1>
+<button name={{this.id}} class="devour">Eat</button>
+{{/each}}
+
+
 <script>
+
+
+    $('.devour').on('click', function () {
+        console.log('u got clicked', $(this).attr('name'))
+        $.ajax({
+            url: '/devour/' + $(this).attr('name'),
+            type: 'put',
+        })
+    })
+
     // jquery on click function!!
     $('#save-btn').on('click', function () {
         //grabing value from <input id="burger-input"></input> above that person is typing into use .val()
