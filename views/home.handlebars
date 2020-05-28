@@ -6,10 +6,23 @@
 <button id="save-btn">Save</button>
 
 {{#each burgers}}
+{{#unless this.devoured}}
+
 <h1> {{this.burgers_name}}</h1>
 <button name={{this.id}} class="devour">Eat</button>
+{{/unless}}
 {{/each}}
 
+
+<div class='devouredDiv'>
+    <p>these burges have been devoured</p>
+    {{#each burgers}}
+    {{#if this.devoured}}
+    <h1> {{this.burgers_name}}</h1>
+
+    {{/if}}
+    {{/each}}
+</div>
 
 <script>
 
