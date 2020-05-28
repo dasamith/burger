@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-const port = 3000
+const port = process.env.PORT
 
 var connection = require('./config/connection.js')
 
