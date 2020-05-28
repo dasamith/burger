@@ -214,6 +214,7 @@ project still in development phase
 Terminal Screenshot
 
 ![Screenshot](image/Capture.JPG)
+![Screenshot](image/Capture_2.JPG)
 
 ## API Reference
 
