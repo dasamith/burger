@@ -211,9 +211,10 @@ project still in development phase
     To run the template engine: node app.js
 
 ## Screenshot
-Terminal Screenshot
 
+Screenshot
 ![Screenshot](image/Capture.JPG)
+
 ![Screenshot](image/Capture_2.JPG)
 
 ## API Reference
